@@ -1,8 +1,11 @@
 
 #include <iostream>
+#include <string>
 using std::cout;
 using std::endl;
 
+#include <iostream>
+using namespace std;
 
 class aa {
 	public:
@@ -16,6 +19,15 @@ class aa {
 int main() {
 	aa myGradeBook; 
 	myGradeBook.displayMessage(); // call object's displayMessage function
+	
+	std::string food = "Pizza";  // Variable declaration
+	string* ptr = "asd";    // Pointer declaration
+
+// Reference: Output the memory address of food with the pointer (0x6dfed4)
+cout << ptr << "\n";
+
+// Dereference: Output the value of food with the pointer (Pizza)
+cout << &ptr << "\n";
 	return 0; // indicate successful termination
 } // end main
 
